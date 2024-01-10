@@ -1,16 +1,16 @@
 //  TASK 1
-function countOccurrences(arr) {
-  let res = {};
-  for (let i = 0; i < arr.length; i++) {
-    if (res[arr[i]]) {
-      res[arr[i]]++;
-    } else {
-      res[arr[i]] = 1;
-    }
-  }
-  return res;
-}
-console.log(countOccurrences([2, "hello", 2, 3, 3, 3])); //{ '2': 2, '3': 3, hello: 1 }
+// function countOccurrences(arr) {
+//   let res = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     if (res[arr[i]]) {
+//       res[arr[i]]++;
+//     } else {
+//       res[arr[i]] = 1;
+//     }
+//   }
+//   return res;
+// }
+// console.log(countOccurrences([2, "hello", 2, 3, 3, 3])); //{ '2': 2, '3': 3, hello: 1 }
 
 // TASK 2
 // function findUniqueElements(arr) {
@@ -70,3 +70,35 @@ console.log(countOccurrences([2, "hello", 2, 3, 3, 3])); //{ '2': 2, '3': 3, hel
 // console.log(
 //   filterObjectByValueType({ a: 1, b: "hello", c: true, d: 5 }, "number")
 // ); // { a: 1, d: 5 }
+
+// function countStr(str, word) {
+//   let cnt = 0;
+//   for (let i = 0; i <= str.length; i++) {
+//     if (str[i] == word) {
+//       cnt++;
+//     }
+//   }
+//   return cnt;
+// }
+// console.log(countStr("hasan", "a"));
+
+// function reverseNumber(num) {
+//   let a = 0;
+//   while (num !== 0) {
+//     a = a * 10 + (num % 10);
+//     num = Math.floor(num / 10);
+//   }
+//   return a;
+// }
+// console.log(reverseNumber(123));
+
+// function reverseNumber(num) {
+//   let reversed = 0;
+//   let numToString = num.toString();
+//   for (let i = numToString.length - 1; i >= 0; i--) {
+//     reversed = reversed * 10 + parseInt(numToString.charAt(i));
+//   }
+//   return reversed;
+// }
+// console.log(reverseNumber(123));
+
